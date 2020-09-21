@@ -42,5 +42,9 @@ class Waiter
     end
   end
 
+  def tip_avg_lstexp_waiter
+    
+  end
+
 
 end
