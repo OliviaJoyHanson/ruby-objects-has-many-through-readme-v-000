@@ -37,13 +37,13 @@ class Waiter
   end
 
   def meal_of_worst_tipper
-    meal_of_worst_tipper = meals.min do |meal_a, meal_b|
+    meals.min do |meal_a, meal_b|
       meal_a.tip <=> meal_b.tip
     end
   end
 
   def tip_avg_lstexp_waiter
-    
+
   end
 
 
