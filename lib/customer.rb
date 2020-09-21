@@ -21,17 +21,17 @@ class Customer
   def meals
     Meal.all.select do |meal|
       meal.customer == self
-    end 
+    end
   end
 
-  def waiters 
+  def waiters
     meals.map do |meal|
       meal.waiter
-    end 
+    end
   end
 
-  def self.oldest_customer 
+  def self.oldest_customer
     self.all.max_by{|customer| customer.age}
-  end 
+  end
 
 end
