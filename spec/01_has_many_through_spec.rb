@@ -241,7 +241,7 @@ describe "Object relationships" do
       end
     end
 
-    describe "#tip_avg_lstexp_waiter" do
+    describe ".tip_avg_lstexp_waiter" do
       it "returns the average tip received by the Waiter with the least years of experience" do
         howard = Customer.new("Howard", 30)
         daniel = Customer.new("Daniel", 30)
