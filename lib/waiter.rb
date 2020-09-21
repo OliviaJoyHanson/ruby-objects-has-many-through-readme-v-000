@@ -44,7 +44,7 @@ class Waiter
 
   def self.tip_avg_lstexp_waiter
     lstexp_waiter = self.all.min{|waiter_a, waiter_b| waiter_a.yrs_experience <=> waiter_b.yrs_experience}
-    lstexp_waiter.meals.tips.average
+    lstexp_waiter.meals.tip.average
   end
 
 
