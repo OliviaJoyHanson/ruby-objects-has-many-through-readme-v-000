@@ -30,5 +30,8 @@ class Customer
     end 
   end
 
+  def self.oldest_customer 
+    self.all.max_by{|customer| customer.age}
+  end 
 
 end
