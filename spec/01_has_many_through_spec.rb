@@ -141,8 +141,8 @@ describe "Object relationships" do
       end
     end
 
-    describe ".oldest_customer" do 
-      it "returns the Customer instance of the oldest customer" do 
+    describe ".oldest_customer" do
+      it "returns the Customer instance of the oldest customer" do
         howard = Customer.new("Howard", 30)
         daniel = Customer.new("Daniel", 30)
         lisa = Customer.new("Lisa", 27)
@@ -150,9 +150,9 @@ describe "Object relationships" do
         steven = Customer.new("Steven", 28)
 
         expect(Customer.oldest_customer).to eq(josh)
-      end 
+      end
     end
-    
+
   end
 
   describe "Waiter" do
