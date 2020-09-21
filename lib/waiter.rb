@@ -42,8 +42,10 @@ class Waiter
     end
   end
 
-  def tip_avg_lstexp_waiter
-
+  def self.tip_avg_lstexp_waiter
+    self.all.max do |waiter_a, waiter_b|
+      waiter_a.yrs_experience <=> waiter_b.yrs_experience
+    end
   end
 
 
