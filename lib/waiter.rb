@@ -45,7 +45,8 @@ class Waiter
   def self.tip_avg_lstexp_waiter
     lstexp_waiter = self.all.min{|waiter_a, waiter_b| waiter_a.yrs_experience <=> waiter_b.yrs_experience}
     binding.pry
-    lstexp_waiter.meals.map{|meal| meal.tip}.avg
+    tips_array = lstexp_waiter.meals.map{|meal| meal.tip}
+    tips_array.sum(0.0)/tips_array.size
   end
 
 
