@@ -268,6 +268,8 @@ describe "Object relationships" do
         josh.new_meal(jared, 15, 1)
         josh.new_meal(jared, 45, 3)
         steven.new_meal(jared, 15, 3)
+
+        expect(Waiter.tip_avg_lstexp_waiter).to eq(3.5)
       end
     end
 
